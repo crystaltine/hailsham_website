@@ -26,7 +26,7 @@ function Footer() {
 						<span>The School of Hailsham</span>
 					</div>
 
-					<h3 style="text-align: right">Established 1958</h3>
+					<h3 style="text-align: right">Established 1953</h3>
 
 				</div>
 				

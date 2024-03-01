@@ -60,7 +60,7 @@ function Footer() {
 				<div class="footer-bottom-buttons">
 
 					<div class="footer-bottom-credit">
-						<img src="../assets/pfp.png" class="footer-bottom-pfp" alt="" />
+						<img src="assets/pfp.png" class="footer-bottom-pfp" alt="" />
 						<span class="footer-bottom-username">crystaltine</span>
 					</div>
 

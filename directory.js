@@ -11,41 +11,46 @@ const dirContents = {
 			imageSrc: "./assets/dir/tommy.jpg	"
 		},
 		{
+			name: "Marge K.",
+			desc: "<i>No biography provided</i>",
+			imageSrc: "./assets/dir/unknown.jpg"
+		},
+		{
 			name: "Harry C.",
 			desc: "<i>No biography provided</i>",
-			imageSrc: "./assets/dir/harry.png"
+			imageSrc: "./assets/dir/unknown.jpg"
 		},
 		{
 			name: "Ruth M.",
 			desc: "<i>No biography provided</i>",
-			imageSrc: "./assets/dir/kathy.png"
+			imageSrc: "./assets/dir/ruth.jpg"
 		},
 		{
 			name: "Sharon D.",
 			desc: "<i>No biography provided</i>",
-			imageSrc: "./assets/dir/unknown.png"
+			imageSrc: "./assets/dir/unknown.jpg"
 		},
 		{
 			name: "Cynthia E.",
 			desc: "<i>No biography provided</i>",
-			imageSrc: "./assets/dir/unknown.png"
+			imageSrc: "./assets/dir/unknown.jpg"
 		}
 	],
 	staff: [
 			{
 					name: "Miss Emily",
 					desc: "Headmaster and Founder",
-					imageSrc: "./assets/dir/unknown.png"
+					imageSrc: "./assets/dir/unknown.jpg"
 			},
 			{
 					name: "Miss Lucy",
 					desc: "Former Guardian. Always more theoretically idealistic, wanted the best for our students. We thank her for her service and wish her the best.",
-					imageSrc: "./assets/dir/unknown.png"
+					imageSrc: "./assets/dir/unknown.jpg"
 			},
 			{
 					name: "Miss Marie-Claude",
 					desc: "Collector of The Gallery",
-					imageSrc: "./assets/dir/unknown.png"
+					imageSrc: "./assets/dir/unknown.jpg"
 			}
 	]
 }
@@ -64,8 +69,6 @@ const studentCardsContainer = document.getElementById("dir-cards-container-stude
 const staffCardsContainer = document.getElementById("dir-cards-container-staff");
 
 const {students, staff} = dirContents
-
-console.log(JSON.stringify(dirContents))
 
 students.forEach((info) => {
 	studentCardsContainer.insertAdjacentHTML('beforeend', DirectoryCard(info.name, info.desc, info.imageSrc))

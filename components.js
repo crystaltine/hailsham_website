@@ -7,9 +7,7 @@ function Navbar() {
 			</div>
 			<nav class="navbar-links">
 				<a href="/">Home</a>
-				<a href="/about.html">About</a>
 				<a href="/directory.html">Directory</a>
-				<a href="/news.html">News</a>
 				<a href="/contact.html">Contact</a>
 			</nav>
 		</div>
@@ -48,9 +46,10 @@ function Footer() {
 	`;
 }
 
-
-
-// insert at beginning of root innerHTML
-document.getElementById('root').insertAdjacentHTML('afterbegin', Navbar());
-// insert at end of root innerHTML
-document.getElementById('root').insertAdjacentHTML('beforeend', Footer());
+window.addEventListener('DOMContentLoaded', () => {
+	console.log('dom content loaded')
+	// insert at beginning of root innerHTML
+	document.getElementById('root').insertAdjacentHTML('afterbegin', Navbar());
+	// insert at end of root innerHTML
+	document.getElementById('root').insertAdjacentHTML('beforeend', Footer());
+})

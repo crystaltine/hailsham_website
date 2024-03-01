@@ -39,4 +39,12 @@
 
 .featured-gallery {
     width: min(100%, 500px);
+    box-shadow: 0 10px 80px -20px #0028;
+    border-radius: 10px;
+    transition: 0.2s;
+    cursor: pointer;
+}
+.featured-gallery:hover {
+    transform: translateY(-2px) rotate(1deg) scale(1.01);
+    box-shadow: 0 10px 100px -20px #002a !important;
 }

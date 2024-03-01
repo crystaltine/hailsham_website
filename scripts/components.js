@@ -10,9 +10,9 @@ function Navbar() {
 
 			</div>
 			<nav class="navbar-links">
-				<a href="/">Home</a>
-				<a href="/directory.html">Directory</a>
-				<a href="/contact.html">Contact</a>
+				<a href="/hailsham_website">Home</a>
+				<a href="/hailsham_website/directory.html">Directory</a>
+				<a href="/hailsham_website/contact.html">Contact</a>
 			</nav>
 		</div>
 	`;
@@ -42,9 +42,9 @@ function Footer() {
 				
 				<div>
 					<div class="footer-links">
-						<a href="/">Home</a>
-						<a href="/directory.html">Directory</a>
-						<a href="/contact.html">Contact</a>
+						<a href="/hailsham_website">Home</a>
+						<a href="/hailsham_website/directory.html">Directory</a>
+						<a href="/hailsham_website/contact.html">Contact</a>
 					</div>
 
 					<h3>Acceptance is to suffer. <i>Fight on.</i></h3>

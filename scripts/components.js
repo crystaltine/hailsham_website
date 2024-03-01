@@ -62,9 +62,9 @@ function Footer() {
 					<div class="footer-bottom-credit">
 						<img src="../assets/pfp.png" class="footer-bottom-pfp" alt="" />
 						<span class="footer-bottom-username">crystaltine</span>
-					</div
+					</div>
 
-					<a href="https://github.com/crystaltine/hailsham_website?tab=readme-ov-file#readme" target="_blank" rel="noopener noreferrer">
+					<a href="https://github.com/crystaltine/hailsham_website#readme-ov-file" target="_blank" rel="noopener noreferrer">
 						<button class="button-primary button-medium">README</button>
 					</a>
 					<a href="https://github.com/crystaltine/hailsham_website" target="_blank" rel="noopener noreferrer">

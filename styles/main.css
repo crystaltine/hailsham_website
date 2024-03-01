@@ -1,20 +1,24 @@
 :root {
-    --primary: #007bff;
+    --primary: #92bbe6;
     --secondary: #6c757d;
     --success: #28a745;
     --info: #17a2b8;
     --warning: #ffc107;
     --danger: #dc3545;
     --light: #f8f9fa;
-    --dark: #343a40;
+    --dark: #22252b;
     --bg: #f2f3f4;
-    --navHeight: 50px;
-    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    --navHeight: 70px;
+    font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif
 }
 
 body {
     margin: 0;
     background-color: var(--bg);
+}
+
+hr {
+    margin: 0 50px;
 }
 
 h1, h2, h3, h4, h5, h6, p {
@@ -57,71 +61,50 @@ h1, h2, h3, h4, h5, h6, p {
 .menu-logo-container {
     display: flex;
     align-items: center;
-    font-size: 20px;
-    font-weight: bold;
     gap: 10px;
-    font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif
+    font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    cursor: pointer;
+    transition: 0.2s;
+}
+.menu-logo-container:hover {
+    transform: scale(0.98);
 }
 .menu-logo {
-    width: 40px;
+    width: 50px;
+}
+.hailsham-name-logo {
+    display: flex;
+    flex-direction: column;
+}
+.hailsham-name-logo-t1 {
+    font-size: 10px;
+    font-weight: 600;
+    line-height: 1;
+}
+.hailsham-name-logo-t2 {
+    font-size: 20px;
+    font-weight: bold;
+    line-height: 1;
+    font-family: Tahoma;
 }
 .navbar-links {
     display: flex;
     justify-content: space-between;
+    gap: 20px;
     padding: 0 1rem;
     background-color: var(--bg);
 }
 .navbar-links a {
     color: var(--dark);
     text-decoration: none;
-    padding: 0.5rem 1rem;
-    border-radius: 5px;
-    font-size: 0.8rem;
-    transition: background-color 0.3s;
-}
-.navbar-links a:hover {
-    text-decoration: underline;
-}
-
-.footer {
-    width: 100%;
-    background-color: #ddd;
-}
-
-.footer-container {
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    padding: 100px;
-    box-sizing: border-box;
-}
-.footer-logo-container {
-    display: flex;
-    align-items: center;
-    font-size: 30px;
-    font-weight: bold;
-    gap: 10px;
-    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
-}
-.footer-logo {
-    width: 80px;
-}
-
-.footer-links {
-    display: flex;
-    justify-content: space-between;
-    padding: 0 1rem;
-}
-.footer-links a {
-    color: #343a40;
-    text-decoration: none;
-    padding: 1.5rem 1rem;
+    padding: 0.2rem 0.8rem;
     border-radius: 5px;
     font-size: 1rem;
-    transition: background-color 0.3s;
+    transition: background-color 0.2s;
 }
-.footer-links a:hover {
-    text-decoration: underline;
+.navbar-links a:hover {
+    text-decoration: none;
+    background-color: var(--primary);
 }
 
 .footer {
@@ -129,13 +112,22 @@ h1, h2, h3, h4, h5, h6, p {
     width: 100%;
     background-color: #ddd;
 }
-
 .footer-container {
     display: flex;
     justify-content: space-between;
     align-items: center;
-    padding: 100px;
+    padding: 60px 150px;
     box-sizing: border-box;
+}
+.footer-left {
+    display: flex;
+    align-items: center;
+    gap: 20px;
+}
+.footer-seal {
+    width: 100px;
+    padding-right: 20px;
+    border-right: 2px solid #0008;
 }
 .footer-logo-container {
     display: flex;
@@ -148,7 +140,6 @@ h1, h2, h3, h4, h5, h6, p {
 .footer-logo {
     width: 80px;
 }
-
 .footer-links {
     display: flex;
     justify-content: space-between;
@@ -164,4 +155,91 @@ h1, h2, h3, h4, h5, h6, p {
 }
 .footer-links a:hover {
     text-decoration: underline;
+}
+.footer-bottom {
+    padding: 1rem 0;
+    background-color: var(--dark);
+    color: white;
+    text-align: center;
+    font-size: 14px;
+    font-weight: 500;
+    font-family: Mulish, Inter, system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif
+}
+.footer-bottom-buttons {
+    display: flex;
+    justify-content: center;
+    gap: 0.5em;
+    margin-top: 1em;
+    font-size: 18px;
+}
+
+.footer-bottom-credit {
+    display: flex;
+    align-items: center;
+    gap: 0.5em;
+    font-size: 0.8em;
+    font-weight: 400;
+    padding-right: 0.5em;
+    border-right: 1px solid #fff3;
+}
+.footer-bottom-pfp {
+    height: 1.8em;
+}
+.footer-bottom-username {
+    font-family: "Wix Madefor Display", "Red Hat Display", "Poppins", "Mulish", system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    font-size: 1.2em;
+    font-weight: bold;
+    color: white;
+}
+
+:root {
+    --primaryColorBright: 48, 157, 246;
+    --primaryColorMedium: 51, 135, 224;
+    --primaryColorDark: 45, 113, 215;
+
+    --contentPanelColor: 36, 38, 46;
+    --contentPanelColor2: 46, 50, 59; /* for things like buttons and list items inside content panels */
+    --contentPanelColor3: 57, 60, 69; /* for things like HOVER buttons and list items inside content panels */
+
+    --displayFont: "Wix Madefor Display", Roboto, system-ui, sans-serif;
+
+    --roundedSmall: 5px;
+}
+/* Actually good styles that I copied over from another project ;) */
+.button-primary, .button-secondary {
+    border-radius: var(--roundedSmall);
+    font-weight: 500;
+    font-family: var(--displayFont);
+    border: none;
+    outline: none;
+    cursor: pointer;
+    transition: 0.1s;
+    overflow-x: hidden;
+    white-space: nowrap;
+    text-overflow: ellipsis;
+}
+.button-primary {
+    color: white;
+    background-color: rgb(var(--primaryColorDark));
+    box-shadow: 0px 1px 4px 1px #00000030;
+}
+.button-primary:hover {
+    background-color: rgb(var(--primaryColorMedium));
+    box-shadow: 0px 2px 5px 1px #00000040;
+}
+
+.button-secondary {
+    background-color: rgba(var(--contentPanelColor2), 0.8);
+    color: white;
+    border: none;
+    outline: 1px solid #fff3;
+}
+.button-secondary:hover {
+    background-color: rgba(var(--contentPanelColor3), 0.9);
+    outline: 1px solid rgb(var(--primaryColorBright));
+}
+.button-medium {
+    padding: 8px 24px;
+    font-size: 0.75em;
+    box-sizing: border-box;
 }

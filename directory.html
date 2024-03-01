@@ -9,8 +9,8 @@
 		<link rel="stylesheet" href="./styles/main.css">
 		<link rel="stylesheet" href="./styles/homepage.css">
 		<link rel="stylesheet" href="./styles/directory.css">
-		<script src="./components.js" defer></script>
-		<script src="./directory.js" defer></script>
+		<script src="./scripts/components.js" defer></script>
+		<script src="./scripts/directory.js" defer></script>
 		<title>Hailsham | Directory</title>
 	</head>
 		
@@ -20,10 +20,11 @@
 			<div class="generic-page">
 
 				<div class="homepage-hero">
+					<img class="homepage-hero-image" src="./assets/hailsham_seal.png" alt="Hailsham Seal" />
 					<h1 class="homepage-hero-text">Directory</h1>
 				</div>
 
-				<div class="panel">
+				<div class="panel" style="padding: 30px 50px">
 					<h1>Hailsham Directory</h1>
 					<h3>There are all surviving records of Hailsham students and faculty.</h3>
 					<p>
@@ -33,18 +34,18 @@
 					</p>
 				</div>
 
-				<div class="panel">
-					<h1>Staff</h1>
-					<div id="dir-cards-container-staff">
+				<hr />
 
-					</div>
+				<div class="panel" style="padding: 30px 50px">
+					<h1>Staff</h1>
+					<div id="dir-cards-container-staff" />
 				</div>
 
-				<div class="panel">
-					<h1>Students</h1>
-					<div id="dir-cards-container-students">
+				<hr />
 
-					</div>
+				<div class="panel" style="padding: 30px 50px">
+					<h1>Students</h1>
+					<div id="dir-cards-container-students" />
 				</div>
 
 			</div>

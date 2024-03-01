@@ -1,7 +1,7 @@
 #dir-cards-container-students, #dir-cards-container-staff {
     display: flex;
     flex-wrap: wrap;
-    gap: 50px;
+    gap: 20px;
     justify-content: center;
 }
 
@@ -9,12 +9,12 @@
     display: flex;
     flex-direction: column;
     align-items: center;
-    width: min(90%, 300px);
+    width: min(90%, 200px);
     gap: 20px;
     padding: 30px 20px;
     border-radius: 8px;
     box-shadow: -3px 5px 12px -3px #0004;
-    background-color: #eee;
+    background-color: #fff;
     border: 2px solid #0004;
     transition: 0.2s;
     overflow: hidden;

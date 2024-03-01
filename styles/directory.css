@@ -1,0 +1,41 @@
+#dir-cards-container-students, #dir-cards-container-staff {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 50px;
+    justify-content: center;
+}
+
+.directory-card {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: min(90%, 300px);
+    gap: 20px;
+    padding: 30px 20px;
+    border-radius: 8px;
+    box-shadow: -3px 5px 12px -3px #0004;
+    background-color: #eee;
+    border: 2px solid #0004;
+    transition: 0.2s;
+    overflow: hidden;
+}
+.directory-card:hover {
+    transform: translateY(-2px) scale(1.01);
+}
+
+.directory-card-img {
+    border-radius: 8px;
+    width: 100%;
+    max-height: 300px;
+    object-fit: cover;
+}
+
+.directory-card-name {
+    font-size: 28px;
+}
+
+.directory-card-desc {
+    font-size: 14px;
+    color: #222;
+    margin: 0px;
+}

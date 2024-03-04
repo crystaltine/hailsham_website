@@ -76,6 +76,11 @@ const dirContents = {
 			imageSrc: "./assets/dir/unknown.jpg"
 		},
 		{
+			name: "Michael H.",
+			desc: "<i>No biography provided</i>",
+			imageSrc: "./assets/dir/unknown.jpg"
+		},
+		{
 			name: "Martha H.",
 			desc: "<i>No biography provided</i>",
 			imageSrc: "./assets/dir/unknown.jpg"
@@ -130,7 +135,30 @@ const staffCardsContainer = document.getElementById("dir-cards-container-staff")
 
 const {students, staff} = dirContents
 
-students.forEach((info) => {
+/**
+ * Shuffles array in place and returns it.
+ * @param {Array<any>} array array to shuffle
+ * @returns {Array<any>} shuffled array
+ */
+function shuffle(array) {
+	let currentIndex = array.length,  randomIndex;
+  
+	// While there remain elements to shuffle.
+	while (currentIndex > 0) {
+  
+	  // Pick a remaining element.
+	  randomIndex = Math.floor(Math.random() * currentIndex);
+	  currentIndex--;
+  
+	  // And swap it with the current element.
+	  [array[currentIndex], array[randomIndex]] = [
+		array[randomIndex], array[currentIndex]];
+	}
+  
+	return array;
+}
+
+shuffle(students).forEach((info) => {
 	studentCardsContainer.insertAdjacentHTML('beforeend', DirectoryCard(info.name, info.desc, info.imageSrc))
 })
 staff.forEach((info) => staffCardsContainer.insertAdjacentHTML('beforeend', DirectoryCard(info.name, info.desc, info.imageSrc)))
